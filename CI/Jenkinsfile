@@ -116,6 +116,7 @@ pipeline {
                     sh 'git config --global user.name "PWilkosz"'
                     sh 'npm version patch'
                     sh 'npm publish'
+                    sh 'git remote add origin "github.com/PWilkosz99/nodejs.org.git"'
                     sh 'git push origin CI'
                 }
             }
